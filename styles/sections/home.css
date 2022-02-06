@@ -1,0 +1,252 @@
+.home {
+    background: linear-gradient(180deg, #F0F0F0 0%, #F0F0F0 44.79%);;
+    height: 100vh;
+}
+
+.a {
+    width: 100%;
+    height: 379px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 3em;
+    z-index: 1;
+}
+
+.b {
+    width: 100%;
+    background-color: #164578;
+    /* height: 100%; */
+    position: relative;
+    padding: 1.5em 0 3em 0;
+    z-index: 1;
+    /* height: 60%; */
+}
+
+.wrapper__image {
+    width: 100%;
+    height: 547px;
+}
+
+.wrapper__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.btn__explore {
+    background-color: #0479F9;
+    position: absolute;
+    top:-17px;
+    left:50%;
+    width: 160px;
+    margin-left:-70px;
+    display: flex;
+    justify-content: center;
+    height: 43px;
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+.btn__explore p {
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 17.5px;
+    line-height: 19px;
+    margin-left: 5px;
+}
+
+.btn__explore .arrow {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 8px;
+}
+
+.arrow__top {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 6px;
+}
+
+.arrow__bottom {
+    height: 35px;
+    width: 34px;
+}
+
+.wrapper__logo {
+    position: absolute;
+    bottom: 1em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper__logo__text {
+    display: none;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.1em;          
+}
+
+.information__desktop {
+    display: none;
+}
+
+.background__desktop {
+    display: none;
+    position: absolute;
+    bottom: 1em;
+    right: 0;
+    width: 71%;
+    height: 76%;
+    z-index: 0;
+}
+
+.img__med {
+    background-image: url('../../assets/imgs/logo-med.png');
+    height: 25px;
+    width: 250px;
+    background-size: cover;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.networks {
+    background: linear-gradient(180deg, #C0ADAD 0%, rgba(240, 240, 240, 0) 94.47%);
+    width: 36%;
+    height:70%;
+    position: absolute;
+    left: 9%;
+    top:0;
+    display: none;
+}
+
+.networks img {
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .home { 
+        display: flex;
+    }
+
+    .background__desktop {
+        display: block;
+    }
+
+    .wrapper__image {
+        padding: 0;
+    }
+
+    .a {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3em;
+    }
+
+    .information {
+        display: none;
+    }
+
+    .information__desktop {
+        text-align: start;
+        display: block;
+        background-color: var(--blue);
+        padding: 2em 3em;
+        border-radius: 5px;
+        color: var(--white);        
+    }
+
+    .information__desktop p {
+        margin-bottom: 30px;
+        /* font-size: 18px; */
+        line-height: 23px;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.12em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .b {
+        width: 50%;
+        height: 60%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .wrapper__image {
+        display: none;
+    }
+
+    .img__med {
+        display: none;
+    }
+
+    .networks {
+        display: block;
+    }
+
+    .wrapper__logo {
+        display: block;
+        left: 9%;
+        width: auto;
+    }
+    
+    .wrapper__logo__text {
+        display: block;
+    }
+
+    .wrapper__logo img {
+        margin-left: 0.5em;
+    }
+
+    .wrapper__logo .flex-center-column {
+        display: block;
+    }
+
+    .btn__explore {
+        bottom: -28px;
+        left: auto;
+        top: auto;
+        margin-left: 0;
+        right: 2em;
+        width: 175px;
+        height: 53px;
+    }
+
+    .btn__explore p {
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        font-size: 21px;
+        line-height: 29px;
+        margin-left: 0px;
+    }
+
+    .arrow__top {
+        width: 30px;
+        height: 28px;
+        left: 12px;
+    }
+
+    .arrow__bottom {
+        width: 55px;
+        height: 52px;
+    }
+}

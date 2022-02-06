@@ -1,0 +1,75 @@
+header {
+    padding: 1em;
+    width: 100%;
+    top:0;
+    position: absolute;
+    /* position: fixed; */
+    z-index: 100;
+}
+
+.text-logo {
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1em; */
+}
+
+nav ul li {
+    padding: 0 0.8em;
+}
+
+nav ul li:not(:last-child){
+    border-right: 1px solid #164578;
+}
+
+nav ul li a {
+    color: var(--green);
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+nav ul li a.active {
+    font-weight: 500;
+    color: #164578;
+    padding: 0 0.2em 0.2em 0.2em;
+    border-bottom: 1px solid #164578;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .text-logo {
+        display: block;
+        color: var(--green);
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        line-height: 72px;
+        text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    nav ul {
+        justify-content: end;
+    }
+
+    nav ul li:not(:last-child){
+        border-right: none;
+    }
+
+    nav ul li a {
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    nav ul li a.active {
+        font-weight: 700;
+        color: var(--green);
+        padding: 0 0 0.2em 0;
+        border-bottom: 1px solid var(--green);
+    }
+}
